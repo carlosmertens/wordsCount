@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Words Count</title>
+    <title>Count Words</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -19,20 +19,7 @@
     </div>
 
     <div class="container">
-      <div class="jumbotron">
-        <h1 class="display-4">Welcome to Words Count!</h1>
-        <p class="lead">
-          Bellow you can add your text and let us count the instances each word
-          can be found in it.
-        </p>
-        <hr class="my-4" />
-
-        <form action="{% url 'tag-count' %}">
-          <textarea name="user-text" cols="40" rows="5"></textarea>
-          <br />
-          <input type="submit" value="Count it!" />
-        </form>
-      </div>
+      <h2>Count Page!</h2>
     </div>
   </body>
 </html>
