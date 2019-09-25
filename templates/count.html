@@ -13,13 +13,24 @@
     />
   </head>
   <body>
-    <!--Temporary message for home page-->
     <div class="alert alert-primary" role="alert">
-      Website is being built. Thanks for your understanding!!!
+      Isn't it Django fun!!!
     </div>
 
     <div class="container">
-      <h2>Count Page!</h2>
+      <div class="jumbotron">
+        <h1>Your text has {{ count }} words!</h1>
+        <hr class="my-4" />
+
+        <p class="lead">Your text:</p>
+        {{ tag_text }}
+
+        <hr class="my-4" />
+
+        <p class="lead">Each word count:</p>
+        {% for word, num in each_word %}
+        {{ word }} : {{ num }} | {% endfor %}
+      </div>
     </div>
   </body>
 </html>
